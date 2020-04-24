@@ -23,8 +23,10 @@ class TodoItem extends Component{
 }
 
 TodoItem.propTypes = {
-	todo: PropTypes.object.isRequired
-}
+	todos: PropTypes.array.isRequired,
+	markComplete: PropTypes.func.isRequired,
+	delTodo: PropTypes.func.isRequired
+};
 
 // const itemStyle = {
 // 	backgroundColor: '#f4f4f4'
